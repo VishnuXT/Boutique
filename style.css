@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "WildWideExtended";
+  src: url("./fonts/the_extended_font/THEEXTENDEDFONT-DEMOVERSION.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #f6d1b8 55%, #d99b77 106%);
+
+  color: #fff !important;
+  overflow-x: hidden !important;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 30px 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+header nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  opacity: 0.7;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  position: relative;
+  background: url("./Assets/bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* LEFT TEXT */
+.hero-sec {
+  width: 100%;
+  height: 100vh;
+  place-content: center;
+}
+
+.btn {
+  position: absolute;
+  right: 20%;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* RIGHT IMAGE */
+.hero-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_text {
+  font-family: "Great Vibes", cursive;
+  font-size: 72px;
+  letter-spacing: 1px;
+  display: flex;
+  column-gap: 100px;
+  justify-content: center;
+}
+.main_text-2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 256px;
+  letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.book-now-btn {
+  display: inline-block;
+  padding: 8px 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3a2c29;
+  background-color: rgba(255, 223, 208, 0.3);
+  border: 1.5px solid rgba(255, 223, 208, 0.8);
+  border-radius: 30px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  backdrop-filter: blur(2px);
+}
+/* .nav_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 5%;
+  z-index: 999;
+} */
+
+/* hero section */
+
+/* Event Section */
+.custom-gallery-section {
+  background: linear-gradient(to right, #eec0c6, #eca0a7);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-gallery-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+  color: #5b2c35;
+  margin-bottom: 60px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.custom-gallery-card {
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.custom-gallery-card:hover {
+  transform: scale(1.05);
+}
+
+.custom-gallery-card img {
+  display: block;
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+}
+
+.hide {
+  display: none;
+}
+
+/* footer */
+
+.custom-footer {
+  background-color: #f1b998;
+  padding: 80px 40px 40px;
+  color: #2c1b16;
+  font-family: "Cormorant Garamond", serif;
+  text-align: left;
+}
+
+.footer-message p {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.footer-bottom {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  font-size: 1rem;
+  color: #6f4e47;
+  flex-wrap: wrap;
+}

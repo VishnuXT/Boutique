@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dress Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Felipa&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./resposive.css" />
+    <link rel="stylesheet" href="./nav.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- Sidebar for Mobile -->
+      <ul class="sidebar" id="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              width="26"
+              viewBox="0 96 960 960"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#event">EVENTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+
+      <!-- Main Navbar -->
+      <ul>
+        <li class="hideOnMobile nav-logo">
+          <img class="glass-effect" src="./Assets/logo.png" alt="" height="100px" />
+        </li>
+        <li class="viewOnMobile nav-logo">
+          <img src="./Assets/logo.png" alt="" height="40px" />
+        </li>
+        <li class="hideOnMobile"><a href="#home">HOME</a></li>
+        <li class="hideOnMobile"><a href="#event">EVENTS</a></li>
+        <li class="hideOnMobile"><a href="#about">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="#contact">CONTACT US</a></li>
+
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              width="26"
+              viewBox="0 96 960 960"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" >
+      <section class="hero">
+        <div class="hero-sec">
+          <div class="main_text">
+            <div>Lets Find</div>
+            <div>Your Special</div>
+          </div>
+          <div class="main_text-2">DRESS</div>
+          <div class="btn">
+            <a
+              href="https://wa.me/919207987475?text=Hey%20is%20this%20Al%20-%20Sreea%20MATERIAL%20BOUTIQUE"
+              class="book-now-btn"
+              target="_blank"
+            >
+              BOOK NOW &rsaquo;
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./Assets/Elegant Woman in Pink 3.svg" alt="Dress Model" />
+        </div>
+      </section>
+      <!-- Second Section -->
+      <section class="event-section">
+        <div class="event-container">
+          <div class="event-image">
+            <img src="./Assets/Group 1.svg" alt="Wedding Couple" />
+          </div>
+          <div class="event-text">
+            <h4 class="subtitle">Life Is An Event</h4>
+            <h1 class="main-title">CREATING THE<br />BEST DAY EVER</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              aliquam mi id augue ultrices. In tempus elit tristique aliquam.
+              Ultrices sem non.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- third Section -->
+      <section class="build-section">
+        <div class="build-container">
+          <div class="build-text">
+            <h4 class="tagline">We Create . You Celebrate</h4>
+            <h1 class="main-title">WE BUILD YOUR<br />DREAM AROUND YOU</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              aliquam mi id augue ultrices. In tempus elit tristique. Aliquam
+              ultrices sem non.
+            </p>
+          </div>
+          <div class="build-image">
+            <img src="./Assets/Group 2.svg" alt="Bride and Decor" />
+          </div>
+        </div>
+      </section>
+
+      <!-- fourth Section -->
+      <section class="event-section">
+        <div class="event-container">
+          <div class="event-image">
+            <img src="./Assets/Group 6.svg" alt="Wedding Couple" />
+          </div>
+          <div class="event-text">
+            <h4 class="subtitle">Design. Plan. Love</h4>
+            <h1 class="main-title">Baby Shower</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              aliquam mi id augue ultrices. In tempus elit tristique aliquam.
+              Ultrices sem non.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- event Section -->
+    <section id="event" class="event-sec ">
+      <div class="gallery mob-view">GALLERY</div>
+      <div class="carousel-container">
+        <div class="event_title">Events</div>
+        <div class="carousel-track ">
+          <div class="card" data-index="0">
+            <img
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=3687&auto=format&fit=crop"
+              alt="Team Member 1"
+            />
+          </div>
+          <div class="card" data-index="1">
+            <img
+              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=3870&auto=format&fit=crop"
+              alt="Team Member 2"
+            />
+          </div>
+          <div class="card" data-index="2">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&auto=format&fit=crop&q=60"
+              alt="Team Member 3"
+            />
+          </div>
+          <div class="card" data-index="3">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop&q=60"
+              alt="Team Member 4"
+            />
+          </div>
+          <div class="card" data-index="4">
+            <img
+              src="https://images.unsplash.com/photo-1655249481446-25d575f1c054?w=900&auto=format&fit=crop&q=60"
+              alt="Team Member 5"
+            />
+          </div>
+          <div class="card" data-index="5">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3687&auto=format&fit=crop"
+              alt="Team Member 6"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer Section -->
+
+    <footer id="about" class="custom-footer">
+      <div class="footer-message">
+        <p>
+          OUR MANAGEMENT WILL LEAVE YOU <br />
+          BREATHLESS ON YOUR SPECIAL DAY.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright line</span>
+        <span>Terms of Use</span>
+        <span>Privacy Policy</span>
+      </div>
+    </footer>
+    <script src="./style.js"></script>
+  </body>
+</html>
