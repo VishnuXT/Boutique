@@ -64,6 +64,10 @@ nav li:first-child {
 .nav-logo {
   height: auto;
 }
+.logo_pad {
+  padding: 10px;
+}
+
 .glass-effect {
   background: rgba(255, 255, 255, 0.2); /* translucent white */
   backdrop-filter: blur(10px);

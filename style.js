@@ -106,10 +106,3 @@ document.querySelectorAll(".nav_links a").forEach((link) => {
   });
 });
 
-function showSidebar() {
-  document.getElementById("sidebar").style.display = "flex";
-}
-
-function hideSidebar() {
-  document.getElementById("sidebar").style.display = "none";
-}

@@ -42,6 +42,7 @@
       <ul class="sidebar" id="sidebar">
         <li onclick="hideSidebar()">
           <a href="#">
+            <!-- Close Icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="26"
@@ -54,16 +55,23 @@
             </svg>
           </a>
         </li>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#event">EVENTS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
+        <li onclick="hideSidebar()"><a href="#home">HOME</a></li>
+        <li onclick="hideSidebar()"><a href="#event">EVENTS</a></li>
+        <li onclick="hideSidebar()"><a href="#about">ABOUT</a></li>
+        <li onclick="hideSidebar()"><a href="#contact">CONTACT US</a></li>
       </ul>
 
       <!-- Main Navbar -->
       <ul>
         <li class="hideOnMobile nav-logo">
-          <img class="glass-effect" src="./Assets/logo.png" alt="" height="100px" />
+          <div class="logo_pad">
+            <img
+              class="glass-effect"
+              src="./Assets/logo.png"
+              alt=""
+              height="60px"
+            />
+          </div>
         </li>
         <li class="viewOnMobile nav-logo">
           <img src="./Assets/logo.png" alt="" height="40px" />
@@ -91,7 +99,7 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="home" >
+    <section id="home">
       <section class="hero">
         <div class="hero-sec">
           <div class="main_text">
@@ -169,11 +177,11 @@
     </section>
 
     <!-- event Section -->
-    <section id="event" class="event-sec ">
+    <section id="event" class="event-sec">
       <div class="gallery mob-view">GALLERY</div>
       <div class="carousel-container">
         <div class="event_title">Events</div>
-        <div class="carousel-track ">
+        <div class="carousel-track">
           <div class="card" data-index="0">
             <img
               src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=3687&auto=format&fit=crop"
@@ -230,5 +238,22 @@
       </div>
     </footer>
     <script src="./style.js"></script>
+    <script>
+      function showSidebar() {
+        document.getElementById("sidebar").style.display = "flex";
+      }
+
+      function hideSidebar() {
+        document.getElementById("sidebar").style.display = "none";
+      }
+
+      // Automatically hide sidebar when any link is clicked
+      window.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll("#sidebar a");
+        links.forEach((link) => {
+          link.addEventListener("click", hideSidebar);
+        });
+      });
+    </script>
   </body>
 </html>
