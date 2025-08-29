@@ -63,19 +63,7 @@
       </ul>
       <!-- Main Navbar -->
       <ul>
-        <li class="hideOnMobile nav-logo">
-          <div class="logo_pad">
-            <img
-              class="glass-effect"
-              src="./Assets/logo.png"
-              alt=""
-              height="60px"
-            />
-          </div>
-        </li>
-        <li class="viewOnMobile nav-logo">
-          <img src="./Assets/logo.png" alt="" height="80px" />
-        </li>
+        <li ></li>
         <li class="hideOnMobile"><a href="#home">HOME</a></li>
         <li class="hideOnMobile"><a href="#event">EVENTS</a></li>
         <li class="hideOnMobile"><a href="#about">ABOUT</a></li>
@@ -172,44 +160,44 @@
       </section>
     </section>
     <!-- event Section -->
-    <section id="event" class="event-sec">
+    <section id="event" class="event-sec hideOnMobile">
       <div class="gallery mob-view">GALLERY</div>
       <div class="carousel-container">
         <div class="event_title">Events</div>
         <div class="carousel-track">
           <div class="card" data-index="0">
             <img
-              src="https://i.ibb.co/XrCtNWkF/img-6.webp"
+              src="https://i.ibb.co/Y4rGjdFJ/img-1.jpg"
               alt="Team Member 1"
             />
           </div>
           <div class="card" data-index="1">
             <img
-              src="https://i.ibb.co/7JpWnQ9N/img-1.webp"
+              src="https://i.ibb.co/HpCTJ2HC/img-6.jpg"
               alt="Team Member 2"
             />
           </div>
           <div class="card" data-index="2">
             <img
-              src="https://i.ibb.co/cSW3F31y/img-3.webp"
+              src="https://i.ibb.co/6cMjKtd8/img-2.jpg"
               alt="Team Member 3"
             />
           </div>
           <div class="card" data-index="3">
             <img
-              src="https://i.ibb.co/1GTv4Ftf/img-4.webp"
+              src="https://i.ibb.co/XZMRYz5N/img-5.png"
               alt="Team Member 4"
             />
           </div>
           <div class="card" data-index="4">
             <img
-              src="https://i.ibb.co/kVtnPm3D/img-5.webp"
+              src="https://i.ibb.co/nMdDfmPd/img-3.jpg"
               alt="Team Member 5"
             />
           </div>
           <div class="card" data-index="5">
             <img
-              src="https://i.ibb.co/6Rj40DNg/img-2.webp"
+              src="https://i.ibb.co/d4fQH5cs/img-4.jpg"
               alt="Team Member 6"
             />
           </div>
@@ -236,7 +224,14 @@
       }
       function hideSidebar() {
         document.getElementById("sidebar").style.display = "none";
-      } // Automatically hide sidebar when any link is clicked window.addEventListener("DOMContentLoaded", () => { const links = document.querySelectorAll("#sidebar a"); links.forEach((link) => { link.addEventListener("click", hideSidebar); }); });
+      }
+      // Automatically hide sidebar when any link is clicked
+      window.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll("#sidebar a");
+        links.forEach((link) => {
+          link.addEventListener("click", hideSidebar);
+        });
+      });
     </script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
