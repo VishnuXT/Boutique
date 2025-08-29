@@ -101,3 +101,37 @@ document.addEventListener("touchend", (e) => {
 
 // Initialize carousel
 updateCarousel(0);
+
+// mob carousel
+// mob carousel
+const imgBox = document.getElementById("carousel");
+const rightBtn = document.getElementById("right-btn");
+const leftBtn = document.getElementById("left-btn");
+
+// Images
+let pictures = [
+  "https://i.ibb.co/d4fQH5cs/img-4.jpg",
+  "https://i.ibb.co/nMdDfmPd/img-3.jpg",
+  "https://i.ibb.co/XZMRYz5N/img-5.png",
+  "https://i.ibb.co/6cMjKtd8/img-2.jpg",
+  "https://i.ibb.co/HpCTJ2HC/img-6.jpg",
+  "https://i.ibb.co/Y4rGjdFJ/img-1.jpg",
+];
+
+let position = 0;
+
+// set first image
+imgBox.style.backgroundImage = `url('${pictures[position]}')`;
+
+const moveRight = () => {
+  position = (position + 1) % pictures.length;
+  imgBox.style.backgroundImage = `url('${pictures[position]}')`;
+};
+
+const moveLeft = () => {
+  position = (position - 1 + pictures.length) % pictures.length;
+  imgBox.style.backgroundImage = `url('${pictures[position]}')`;
+};
+
+rightBtn.addEventListener("click", moveRight);
+leftBtn.addEventListener("click", moveLeft);
