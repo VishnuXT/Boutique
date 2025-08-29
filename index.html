@@ -7,6 +7,7 @@
     <title>Dress Landing Page</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="scroll-animation.css" />
     <link rel="stylesheet" href="carousel.css" />
     <!-- Google Fonts -->
     <link
@@ -35,6 +36,7 @@
     />
     <link rel="stylesheet" href="./resposive.css" />
     <link rel="stylesheet" href="./nav.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav>
@@ -100,7 +102,7 @@
 
     <!-- HERO SECTION -->
     <section id="home">
-      <section class="hero">
+      <section class="hero" data-aos="fade-down">
         <div class="hero-sec">
           <div class="main_text">
             <div>Lets Find</div>
@@ -122,7 +124,7 @@
         </div>
       </section>
       <!-- Second Section -->
-      <section class="event-section">
+      <section class="event-section" data-aos="fade-right">
         <div class="event-container">
           <div class="event-image">
             <img src="./Assets/Group 1.svg" alt="Wedding Couple" />
@@ -140,7 +142,7 @@
       </section>
 
       <!-- third Section -->
-      <section class="build-section">
+      <section class="build-section" data-aos="fade-left">
         <div class="build-container">
           <div class="build-text">
             <h4 class="tagline">We Create . You Celebrate</h4>
@@ -158,7 +160,7 @@
       </section>
 
       <!-- fourth Section -->
-      <section class="event-section">
+      <section class="event-section" data-aos="fade-right">
         <div class="event-container">
           <div class="event-image">
             <img src="./Assets/Group 6.svg" alt="Wedding Couple" />
@@ -224,7 +226,7 @@
 
     <!-- footer Section -->
 
-    <footer id="about" class="custom-footer">
+    <footer id="about" class="custom-footer" data-aos="fade-up">
       <div class="footer-message">
         <p>
           OUR MANAGEMENT WILL LEAVE YOU <br />
@@ -253,6 +255,13 @@
         links.forEach((link) => {
           link.addEventListener("click", hideSidebar);
         });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false, // ✅ animations happen every time section enters viewport
       });
     </script>
   </body>

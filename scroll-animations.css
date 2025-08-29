@@ -1,0 +1,46 @@
+/* Scroll Animation Overrides for AOS */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-timing-function: ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Custom fade + zoom effects */
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+}
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-50px);
+}
+[data-aos="fade-down"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(-50px);
+}
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(50px);
+}
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.8);
+}
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+}
