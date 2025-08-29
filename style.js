@@ -1,3 +1,7 @@
+// ======================
+// Carousel Functionality
+// ======================
+
 const cards = document.querySelectorAll(".card");
 const track = document.querySelector(".carousel-track");
 
@@ -34,16 +38,21 @@ function updateCarousel(newIndex) {
   }, 800);
 }
 
+// Click to focus a card
 cards.forEach((card, i) => {
   card.addEventListener("click", () => updateCarousel(i));
 });
 
+// Keyboard navigation
 document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft") updateCarousel(currentIndex - 1);
   else if (e.key === "ArrowRight") updateCarousel(currentIndex + 1);
 });
 
-// Mouse drag
+// ======================
+// Mouse Drag Support
+// ======================
+
 let isDragging = false;
 let startX = 0;
 let endX = 0;
@@ -70,7 +79,10 @@ document.addEventListener("mouseup", () => {
   track.style.cursor = "grab";
 });
 
-// Touch support
+// ======================
+// Touch Support (Mobile)
+// ======================
+
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -87,22 +99,5 @@ document.addEventListener("touchend", (e) => {
   }
 });
 
+// Initialize carousel
 updateCarousel(0);
-
-// nav
-
-const burger = document.getElementById("burger");
-const navLinks = document.getElementById("navLinks");
-
-// Toggle full-screen nav
-burger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// Close menu on link click
-document.querySelectorAll(".nav_links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
-});
-
