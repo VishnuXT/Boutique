@@ -2,12 +2,9 @@ nav {
   position: fixed !important;
   top: 0 !important;
   background-color: rgba(255, 255, 255, 0);
-
   z-index: 1000;
   width: 100%;
-}
-
-/* Horizontal Nav */
+} /* Horizontal Nav */
 nav ul {
   display: flex;
   align-items: center;
@@ -31,15 +28,12 @@ nav a:hover {
 }
 nav li:first-child {
   margin-right: auto;
-}
-
-/* Sidebar */
+} /* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-
   background-color: rgba(255, 255, 255, 0.197);
   backdrop-filter: blur(12px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -55,19 +49,16 @@ nav li:first-child {
 .sidebar a {
   width: 100%;
 }
-
 .nav-wrapper {
   display: grid;
   justify-content: space-between;
-}
-/* Logo */
+} /* Logo */
 .nav-logo {
   height: auto;
 }
 .logo_pad {
   padding: 10px;
 }
-
 .glass-effect {
   background: rgba(255, 255, 255, 0.2); /* translucent white */
   backdrop-filter: blur(10px);
@@ -75,8 +66,7 @@ nav li:first-child {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-/* Responsive */
+} /* Responsive */
 @media (max-width: 1000px) {
   .nav-logo {
     height: 40px;
@@ -95,9 +85,7 @@ nav li:first-child {
 }
 .navmedia {
   height: auto;
-}
-
-/* Dropdown */
+} /* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -117,9 +105,7 @@ nav li:first-child {
 }
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-/* Accordion (mobile EXECOM) */
+} /* Accordion (mobile EXECOM) */
 div.c {
   height: 50px;
 }
@@ -162,16 +148,12 @@ input:checked ~ h1 ~ div.p {
 }
 nav a {
   text-decoration: none;
-}
-
-/* Apply underline and styles only to the active link */
+} /* Apply underline and styles only to the active link */
 nav a.active {
   font-weight: 600;
   color: #ffd700; /* Gold color, or any color of your choice */
   text-decoration: underline; /* Only underline the active link */
-}
-
-/* Join button */
+} /* Join button */
 .join-btn {
   font-size: 20px;
   font-weight: bold;
@@ -200,14 +182,10 @@ nav a.active {
 .join-btn:hover {
   transform: rotateX(15deg) rotateY(-5deg) scale(1.05);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-}
-
-/* Menu icon */
+} /* Menu icon */
 .menu-button {
   display: none;
-}
-
-/* Responsive */
+} /* Responsive */
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -229,9 +207,7 @@ nav a.active {
   .navmedia {
     height: 25px;
   }
-}
-
-/* New EXECOM Dropdown */
+} /* New EXECOM Dropdown */
 .execom-dropdown {
   position: relative;
 }
@@ -271,16 +247,12 @@ nav a.active {
 }
 .execom-menu li a:hover {
   font-weight: 600;
-}
-
-/* Hover for Desktop */
+} /* Hover for Desktop */
 @media (min-width: 769px) {
   .execom-dropdown:hover .execom-menu {
     display: flex;
   }
-}
-
-/* Click for Mobile */
+} /* Click for Mobile */
 @media (max-width: 768px) {
   .execom-dropdown {
     width: 100%;
