@@ -62,7 +62,7 @@ header nav a:hover {
   justify-content: space-between;
   padding: 0 100px;
   position: relative;
-  background: url("./Assets/bg.png") no-repeat center center;
+  /* background: url("./Assets/bg.png") no-repeat center center; */
   background-size: cover;
 }
 
