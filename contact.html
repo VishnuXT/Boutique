@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="contact-container">
+      <!-- Go Back Button -->
+      <a href="/" class="back-btn">← Back</a>
+
+      <div class="contact-header">
+        <h2>Contact Us</h2>
+        <p>
+          We're here to help and answer any question you might have. We look
+          forward to hearing from you.
+        </p>
+      </div>
+
+      <div class="contact-options">
+        <!-- WhatsApp -->
+        <div class="contact-card">
+          <div class="icon">💬</div>
+          <div class="contact-info">
+            <h3>WhatsApp</h3>
+            <p>Send us a message on WhatsApp</p>
+            <a
+              href="https://wa.me/919207987475?text=Hey%20is%20this%20AL%20Sreea%20MATERIAL%20BOUTIQUE"
+              >click to message</a
+            >
+          </div>
+          <div class="arrow">➔</div>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-card">
+          <div class="icon">✉️</div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <p>Send us an email</p>
+            <a href="mailto:hello@acmeco.com">click to mail</a>
+          </div>
+          <div class="arrow">➔</div>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <div class="contact-info">
+            <h3>Phone</h3>
+            <p>Call us during business hours</p>
+            <a href="tel:+917356570011">click to call</a>
+          </div>
+          <div class="arrow">➔</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for Loader Transition -->
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.classList.add("fade-out");
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 800); // match transition duration
+      });
+    </script>
+  </body>
+</html>
