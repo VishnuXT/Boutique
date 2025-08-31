@@ -29,7 +29,18 @@ body {
   font-family: "WildWideExtended";
   font-size: 26px;
   font-weight: bold;
+  color: #CFAC57ff;
 
+}
+.alsreea-lap{
+  padding-left: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  font-family: "WildWideExtended";
+  font-size: 26px;
+  font-weight: bold;
+  color: #CFAC57ff;
 }
 .bold-item {
   font-weight: bold ;
