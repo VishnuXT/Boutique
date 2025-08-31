@@ -273,3 +273,16 @@
     height: 400px;
   }
 }
+
+.delayed-show {
+  opacity: 0;
+  visibility: hidden;
+  animation: reveal 0s ease-out 1s forwards;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
