@@ -5,24 +5,25 @@
   font-weight: normal;
   font-style: normal;
 }
+html,
+body {
+  overflow-x: hidden !important;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(to right, #f6d1b8 55%, #d99b77 106%);
-
   color: #fff !important;
-  overflow-x: hidden !important;
 }
 
 /* HEADER */
-header {
+/* header {
   width: 100%;
   padding: 30px 80px;
   position: absolute;
@@ -51,8 +52,8 @@ header nav a {
 }
 
 header nav a:hover {
-  opacity: 0.7;
-}
+  opacity: 0.7; */
+/* } */
 
 /* HERO SECTION */
 .hero {
@@ -64,13 +65,11 @@ header nav a:hover {
   padding: 0 100px;
   position: relative;
   /* background: url("./Assets/bg.png") no-repeat center center; */
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 /* LEFT TEXT */
 .hero-sec {
-  width: 100%;
-  height: 100vh;
   place-content: center;
 }
 
@@ -213,9 +212,6 @@ header nav a:hover {
   color: #6f4e47;
   flex-wrap: wrap;
 }
-
-
-
 
 /* Add this in your CSS */
 .event-sec {

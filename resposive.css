@@ -27,7 +27,7 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column-reverse;
-    padding: 40px 20px;
+    padding: 10px;
     height: auto;
     background-position: center;
   }
@@ -53,8 +53,7 @@
   .hero-image {
     position: static;
     transform: none;
-    margin-top: 30px;
-    width: 100%;
+    
   }
 
   .hero-image img {
