@@ -20,19 +20,24 @@ body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(to right, #f6d1b8 55%, #d99b77 106%);
   color: #fff !important;
+  user-select: none; /* Standard */
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
 }
-
-.alsreea{
+img {
+  pointer-events: none;
+}
+.alsreea {
   width: 100%;
   display: flex;
   justify-content: center;
   font-family: "WildWideExtended";
   font-size: 26px;
   font-weight: bold;
-  color: #CFAC57ff;
-
+  color: #cfac57ff;
 }
-.alsreea-lap{
+.alsreea-lap {
   padding-left: 50px;
   width: 100%;
   display: flex;
@@ -40,13 +45,11 @@ body {
   font-family: "WildWideExtended";
   font-size: 26px;
   font-weight: bold;
-  color: #CFAC57ff;
+  color: #cfac57ff;
 }
 .bold-item {
-  font-weight: bold ;
-
+  font-weight: bold;
 }
-
 
 /* HEADER */
 /* header {
@@ -82,7 +85,7 @@ header nav a:hover {
 /* } */
 
 /* HERO SECTION */
-.logo{
+.logo {
   position: fixed;
   top: 0;
   left: 0;
