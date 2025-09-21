@@ -116,6 +116,13 @@ header nav a:hover {
   cursor: pointer;
   transition: 0.3s;
 }
+.gallery-btn {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 /* RIGHT IMAGE */
 .hero-image {
@@ -150,6 +157,27 @@ header nav a:hover {
   font-weight: 400;
   color: #3a2c29;
   background-color: rgba(255, 223, 208, 0.3);
+  border: 1.5px solid rgba(255, 223, 208, 0.8);
+  border-radius: 30px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  backdrop-filter: blur(2px);
+}
+
+.book-now-btn:hover {
+  background-color: rgba(255, 186, 154, 0.447);
+  border-color: rgb(255, 211, 161);
+  transform: scale(1.05);
+  color: #2a1d1b; /* slightly darker text on hover */
+}
+.explore-btn {
+  display: inline-block;
+  padding: 8px 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3a2c29;
+  background-color: rgb(255 167 125 / 31%);
   border: 1.5px solid rgba(255, 223, 208, 0.8);
   border-radius: 30px;
   text-decoration: none;
